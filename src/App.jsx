@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Upload } from './components/Upload.jsx';
+import { Results } from './components/Results.jsx';
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -11,10 +12,8 @@ function App() {
   return (
     <main>
         <Upload />
-        <section id="results-component">
+        <Results results={result} />
 
-
-        </section>
     </main>
   )
 }
