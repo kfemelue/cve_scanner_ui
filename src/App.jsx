@@ -15,7 +15,7 @@ function App() {
     <ResultsJSON.Provider value={{ results, setResults }}>
       <main>
         <Upload />
-        <ResultsComponent />
+        {results && (<ResultsComponent />)}
 
       </main>
     </ResultsJSON.Provider>

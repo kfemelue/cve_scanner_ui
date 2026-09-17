@@ -27,6 +27,28 @@ main {
 
 .upload-row {}
 
+#selected-files-preview {
+  margin-top: '15px';
+}
+
+#selected-files-preview ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#selected-files-preview li {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#selected-files-preview button {
+  color: red;
+  margin-left: 10px;
+  cursor: 'pointer'
+}
+
 .supported-inputs-list-elements {
   padding: 2px;
   width: 100%;
@@ -98,5 +120,4 @@ main {
   border-color: black;
   margin: 1%;
   padding: 3%;
-
 }
