@@ -11,7 +11,7 @@ export function ResultsComponent(props) {
     let findingsHTML = [];
 
     const sortedFindings = results.findings.sort((a, b) => {
-        return a.cvss_score - b.cvss_score
+        return b.cvss_score - a.cvss_score
     });
 
     for (let i = 0; i < sortedFindings.length; i++) {
@@ -26,9 +26,13 @@ export function ResultsComponent(props) {
         };
 
         let html = <section key={i} className="vulnerability-finding">
-                    <p>CVE: {sortedFindings[i].cve_id} </p>
+                    <p>{sortedFindings[i].cve_id} </p>
                     <p>Severity: {sortedFindings[i].cvss_severity} </p>
-                    {/* click section to open modal for a vulnerability's finding detail */}
+                    {/* <p>Confidence Level: {sortedFindings[i].confidence} </p> */}
+                    <p>File: {sortedFindings[i].dependency.source_file} </p>
+                    <p>Dependency: {sortedFindings[i].dependency.name}</p>
+                    {/* click button to open modal for a vulnerability's finding detail */}
+                    {/* pass sortedFindings[i] as a prop into VulnerabilityModal component */}
                 </section>;
 
         findingsHTML = [...findingsHTML, html]
@@ -39,7 +43,7 @@ export function ResultsComponent(props) {
     return (
         <section id="results-container">
             <section className="results-heading">
-                <h3>Application Status: {results.status.toUpperCase()} </h3>
+                <h3>Application Status: {String(results.status).toUpperCase()} </h3>
             </section>
             <section className="results" id="summary">
                 <p><strong>{results.findings == 0 ? 0 : criticalCount}</strong> Critical Severity Vulnerability Risk Findings</p>
