@@ -1,20 +1,24 @@
-import { useState } from 'react';
+import { useState, createContext, useContext } from 'react';
 import { Upload } from './components/Upload.jsx';
-import { Results } from './components/Results.jsx';
+import { ResultsComponent } from './components/Results.jsx';
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+export const ResultsJSON = createContext();
+
 function App() {
-  const [result, setResult] = useState({})
+  const [results, setResults] = useState(null);
 
   return (
-    <main>
+    <ResultsJSON.Provider value={{ results, setResults }}>
+      <main>
         <Upload />
-        <Results results={result} />
+        <ResultsComponent />
 
-    </main>
+      </main>
+    </ResultsJSON.Provider>
   )
 }
 

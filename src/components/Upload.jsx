@@ -1,8 +1,9 @@
-import { useState } from 'react';
-// import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { useContext, useState } from 'react';
+import { ResultsJSON } from '../App';
 
 export function Upload() {
     const [fileUpload, setFileUpload] = useState(null);
+    const {results, setResults} = useContext(ResultsJSON);
 
     const supportedInputs = [
         "SBOM: CycloneDX JSON/XML; SPDX 2.x JSON/YAML/tag-value; SPDX 3.x JSON/JSON-LD",

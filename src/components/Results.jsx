@@ -1,10 +1,8 @@
+import { useContext } from "react";
+import { ResultsJSON } from '../App';
 
-export function Results(props) {
-
-
-
-
-
+export function ResultsComponent(props) {
+    const {results, setResults} = useContext(ResultsJSON);
 
     return (
         <section id="results-container">
@@ -22,49 +20,49 @@ export function Results(props) {
             </section>
             <section className="results" id="findings">
                 {/* produce each finding from a map of json data, sort by cvss score, highest first */}
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
                     {/* click section to open modal for a vulnerability's finding detail */}
                 </section>
-                <section class="vulnerability-finding">
+                <section className="vulnerability-finding">
                     <p>CVE: { } </p>
                     <p>Severity: { } </p>
 
