@@ -80,7 +80,6 @@ export function Upload() {
         const formData = new FormData();
 
         selectedFiles.forEach((item) => {
-            console.log(item)
             formData.append("files", item)
         });
 
