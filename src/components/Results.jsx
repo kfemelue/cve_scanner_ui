@@ -13,7 +13,7 @@ export function ResultsComponent(props) {
     if (results) {
 
 
-        const sortedFindings = [...results].findings.sort((a, b) => {
+        const sortedFindings = [...results.findings].sort((a, b) => {
             return b.cvss_score - a.cvss_score
         });
 
@@ -54,7 +54,7 @@ export function ResultsComponent(props) {
                 <p><strong>{results.findings == 0 ? 0 : criticalCount}</strong> Critical Severity Vulnerability Risk Findings</p>
                 <p><strong>{results.findings == 0 ? 0 : highCount}</strong> High Severity Vulnerability Findings</p>
                 <p><strong>{results.findings == 0 ? 0 : medCount}</strong> Med Severity Vulnerability Findings</p>
-                <p><strong>{results.findings == 0 ? 0 : lowCount}</strong> Number of Low Severity Vulnerability Findings</p>
+                <p><strong>{results.findings == 0 ? 0 : lowCount}</strong> Low Severity Vulnerability Findings</p>
             </section>
             <section className="results-heading">
                 <h3>Vulnerabilites</h3>
