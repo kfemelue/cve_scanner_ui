@@ -13,7 +13,7 @@ export function ResultsComponent(props) {
     if (results) {
 
 
-        const sortedFindings = results.findings.sort((a, b) => {
+        const sortedFindings = [...results].findings.sort((a, b) => {
             return b.cvss_score - a.cvss_score
         });
 
