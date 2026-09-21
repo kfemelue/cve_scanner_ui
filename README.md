@@ -27,8 +27,17 @@ First, you upload a project configuration file for example a package.json file f
 
 Then the application returns an overview of known vulnerability risks associated with your app's dependencies.
 
-# In Progress
+## In Progress
 
 I'm working on attaching a modal view to each vulnerability that appears in the report. The modal view will have additional details on each vulnerability.
 
 Remediation steps and strategies for each vulnerability can be added further down the roadmap
+
+
+## UI Functionality Demo and Images
+![Image 1](./images/image_1.png)
+![Image 2](./images/image_2.png)
+<video width="640" height="360" controls>
+  <source src="./images/video_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
