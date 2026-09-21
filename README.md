@@ -1,16 +1,34 @@
-# React + Vite
+# CVE Security Platform UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a low fidelity functional UI for the Application Cybersecurity CVE scanner.
+It allows developers to scan a variety of project configuration files to determine if thier application dependencies and third party libraries contain known vulnerabilities and exposures. 
 
-Currently, two official plugins are available:
+The server/backend application, and instructions to build and run it with docker can be found in the [CVE Security Platform Repository](https://github.com/kfemelue/cve-security-platform)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
+The application is built with React/Javascript and uses Vite as a build tool.
 
-## React Compiler
+### Other Dependencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I chose not to use an additional UI library or framework for this iteration of the platform's ui in order to focus on functionality, and ease of use.
 
-## Expanding the ESLint configuration
+An updated version of NodeJS is required to run the app in a local development server.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run the app locally:
+
+1. Clone the repository
+2.  cd into it
+3. run `npm install`
+4. Start the app with `npm run dev` and navigate to http://localhost:5173 in the web browser of your choice.
+
+Using the app is simple. 
+
+First, you upload a project configuration file for example a package.json file from a nodejs project, or requirements.txt file from a python project. 
+
+Then the application returns an overview of known vulnerability risks associated with your app's dependencies.
+
+# In Progress
+
+I'm working on attaching a modal view to each vulnerability that appears in the report. The modal view will have additional details on each vulnerability.
+
+Remediation steps and strategies for each vulnerability can be added further down the roadmap
