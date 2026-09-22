@@ -34,7 +34,7 @@ I'm working on attaching a modal view to each vulnerability that appears in the 
 Remediation steps and strategies for each vulnerability can be added further down the roadmap
 
 
-## UI Functionality Demo and Images
-![Demo Image 1](./images/image_1.png)
-![Demo Image 2](./images/image_2.png)
+## Demo
+<!-- ![Demo Image 1](./images/image_1.png)
+![Demo Image 2](./images/image_2.png) -->
 ![Demo gif 1](./images/demo.gif)
