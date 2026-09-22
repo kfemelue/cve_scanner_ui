@@ -35,9 +35,6 @@ Remediation steps and strategies for each vulnerability can be added further dow
 
 
 ## UI Functionality Demo and Images
-![Image 1](./images/image_1.png)
-![Image 2](./images/image_2.png)
-<video width="640" height="360" controls>
-  <source src="./images/video_demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![Demo Image 1](./images/image_1.png)
+![Demo Image 2](./images/image_2.png)
+![Demo gif 1](./images/demo.gif)
