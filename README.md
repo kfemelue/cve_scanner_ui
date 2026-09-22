@@ -7,11 +7,6 @@ The server/backend application, and instructions to build and run it with docker
 
 ## Tech stack
 The application is built with React/Javascript and uses Vite as a build tool.
-
-### Other Dependencies
-
-I chose not to use an additional UI library or framework for this iteration of the platform's ui in order to focus on functionality, and ease of use.
-
 An updated version of NodeJS is required to run the app in a local development server.
 
 To run the app locally:
